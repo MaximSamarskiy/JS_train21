@@ -204,7 +204,9 @@ class Bassist extends Musician {
   }
   // перевизначений метод play(), що виводить рядок в консоль ${super.name} грає на ${super.instrument} в групі ${this.#band}
   play() {
-    return `${super.name} грає на ${super.instrument} в групі ${this.#band}`;
+    console.log(
+      `${super.name} грає на ${super.instrument} в групі ${this.#band}`
+    );
   }
 }
 
@@ -387,7 +389,7 @@ class Vocalist {
   }
   // Визначаємо метод info(), який виводить інформацію про вокаліста
   info() {
-    console.log("Вокаліст ${this.name} є членом гурту ${this.band}");
+    console.log(`Вокаліст ${this.name} є членом гурту ${this.band}`);
   }
   // Виводимо інформацію у форматі: "Вокаліст ${this.name} є членом гурту ${this.band}"
 }
@@ -417,7 +419,7 @@ class SongWriter {
   // Визначаємо метод info(), який виводить інформацію про автора пісень
   info() {
     // Виводимо інформацію у форматі: "Написав ${this.songs.length} пісень"
-    console.log("Написав ${this.songs.length} пісень");
+    console.log(`Написав ${this.songs.length} пісень`);
   }
 }
 
